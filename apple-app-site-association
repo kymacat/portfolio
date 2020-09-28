@@ -1,0 +1,9 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [{
+            "appID": "BEZVYLYFD7.vk.app.nuano",
+            "paths": ["*"]
+        }]
+    }
+}
