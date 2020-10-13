@@ -1,0 +1,309 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navigation view */
+
+.topnav {
+  background-color: rgb(255, 217, 0);
+  overflow: hidden;
+  font-family: Helvetica;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 20px 25px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: black;
+  color: white;
+}
+
+/* name section */
+
+.nameSection {
+  height: 500px;
+  width: 100%;
+  background-color: rgba(37, 32, 32, 0.829);
+}
+
+.nameSection img {
+  border-radius: 200px;
+  border: 7px solid black;
+  height: 90%;
+  margin-top: 2%;
+  margin-left: 15%;
+}
+
+.nameSection h4 {
+  padding-top: 170px;
+  font-size: 30px;
+  font-family: "Courier";
+  padding-right: 20%;
+  text-align: right;
+  color: rgb(255, 217, 0);
+  margin-bottom: 10px;
+}
+
+.nameSection h5 {
+  font-size: 20px;
+  font-family: "Courier";
+  padding-right: 20%;
+  text-align: right;
+  color: white;
+}
+
+/* aboutMe section */
+
+.aboutMeSection {
+  height: 500px;
+  width: 100%;
+  background-color: white;
+}
+
+.myImage {
+  height: 90%;
+  margin-top: 3.5%;
+  margin-right: 10%;
+}
+
+.aboutMeSection h5 {
+  padding-top: 170px;
+  font-size: 18px;
+  font-family: "Courier";
+  padding-left: 25%;
+  text-align: left;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.aboutMeText {
+  font-size: 14px;
+  font-family: "Courier";
+  padding-left: 25%;
+  padding-right: 35%;
+  text-align: left;
+  color: black;
+}
+
+.socialNetworks {
+  margin-left: 25%;
+}
+
+.socialNetworks img {
+  margin-top: 30px;
+  float: left;
+  margin-right: 10px;
+  padding: 8px;
+  border-radius: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(255, 217, 0);
+}
+
+.socialNetworks img:hover {
+  opacity: 0.7;
+}
+
+.aboutMeNavigationFirst {
+  margin-top: 80px;
+  font-size: 40px;
+  font-family: "Impact";
+  margin-left: 10%;
+  text-align: left;
+  color: black;
+}
+
+.aboutMeNavigationSecond {
+  font-size: 40px;
+  font-family: "Impact";
+  margin-left: 10%;
+  text-align: left;
+  color: rgb(255, 217, 0);
+}
+
+/* Skills section */
+
+.skills {
+  height: 550px;
+  width: 100%;
+  background-color: rgb(255, 217, 0);
+}
+
+.skills h4 {
+  padding-top: 50px;
+  margin-left: 10%;
+  font-family: "Courier";
+}
+
+.skillsTitle {
+  padding-top: 50px;
+  margin-left: 10%;
+  font-family: "Courier";
+}
+
+.skills ol {
+  margin-top: 30px;
+  margin-left: 10%;
+  list-style: none;
+  padding-left: 40px;
+}
+
+.skills ol li {
+  margin: 0 0 20px 0;
+  counter-increment: my-awesome-counter;
+  position: relative;
+  max-width: 55%;
+  font-family: Helvetica;
+}
+
+.skills ol li::before {
+  content: counter(my-awesome-counter);
+  color: #fcd000;
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: absolute;
+  left: -42px;
+  line-height: 32px;
+  width: 32px;
+  height: 32px;
+  top: 0;
+  background: black;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 1px 1px 0 #999;
+  margin-top: -7px;
+}
+
+
+.skillsNavigationFirst {
+  margin-top: -80px;
+  font-size: 40px;
+  font-family: Impact;
+  margin-right: 10%;
+  text-align: right;
+  color: black;
+}
+
+.skillsNavigationSecond {
+  font-size: 40px;
+  font-family: Impact;
+  margin-right: 10%;
+  text-align: right;
+  color: white;
+}
+
+
+/* experience section */
+
+.experienceSection {
+  height: 500px;
+  width: 100%;
+  background-color: rgba(37, 32, 32, 0.829);
+}
+
+.experienceSection img {
+  height: 500px;
+  width: 600px;
+  margin-left: 25%;
+}
+
+.experienceNavigationFirst {
+  position: absolute;
+  margin-top: -80px;
+  font-size: 40px;
+  font-family: Impact;
+  margin-left: 7%;
+  text-align: left;
+  color: white;
+}
+
+.experienceNavigationSecond {
+  position: absolute;
+  font-size: 40px;
+  font-family: Impact;
+  margin-top: -30px;
+  margin-left: 7%;
+  text-align: left;
+  color: rgb(255, 217, 0);
+}
+
+.experienceRoad {
+  width: 300px;
+  margin-left: 70%;
+}
+
+.experienceRoad p {
+  border-top: 2px dashed;
+  border-color: rgb(255, 217, 0) !important;
+  margin:0; padding: 30px;
+  counter-increment: section;
+  position: relative;
+  color: white;
+}
+
+.experienceRoad p:nth-child(even):before {
+  content: counter(section);
+  right: 100%; 
+  margin-right: -20px;
+  position: absolute;
+  border-radius: 50%;
+  padding: 10px;
+  height: 20px;
+  width: 20px;
+  background-color: rgb(255, 217, 0);
+  text-align:center;
+  color: black;
+  font-size: 110%;
+}
+
+.experienceRoad p:nth-child(odd):before {
+  content: counter(section);
+  left: 100%; 
+  margin-left: -20px;
+  position: absolute;
+  border-radius: 50%;
+  padding: 10px;
+  height: 20px;
+  width: 20px;
+  background-color: rgb(255, 217, 0);
+  text-align:center;
+  color: black;
+  font-size: 110%;
+}
+
+
+.experienceRoad p:nth-child(even) {
+  border-left: 2px dashed;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  margin-right: 30px; 
+  padding-right: 0;
+}
+
+.experienceRoad p:nth-child(odd) {
+  border-right: 2px dashed;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  margin-left: 30px; 
+  padding-left: 0;
+}
+
+.experienceRoad p:first-child {
+  border-top: 0;
+  border-top-right-radius:0;
+  border-top-left-radius:0;
+}
+
+.experienceRoad p:last-child {
+  border-bottom-right-radius:0;
+  border-bottom-left-radius:0;
+}
