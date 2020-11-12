@@ -51,11 +51,11 @@ function partition(items, left, right) {
 
     while (i <= j) {
 
-        while (items[i] < pivot) {
+        while (items[i] > pivot) {
             i++
         }
 
-        while (items[j] > pivot) {
+        while (items[j] < pivot) {
             j--
         }
 
@@ -87,6 +87,20 @@ var result = quickSort(arr, 0, arr.length - 1)
 
 console.log(result)
 
+var dict = {}
+var allTags = document.getElementsByTagName("*");
 
-console.log("div count", document.getElementsByTagName("div").length)
-console.log("a count", document.getElementsByTagName("a").length)
+for (var i = 0, max = allTags.length; i < max; i++) {
+
+    var tag = allTags[i].tagName
+
+    if (dict[tag] == undefined) {
+        dict[tag] = 1
+    } else {
+        dict[tag] += 1
+    }
+}
+
+for(var key in dict) {
+    console.log(key, dict[key])
+}
